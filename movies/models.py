@@ -36,6 +36,8 @@ class Movie(models.Model):
     quality = models.CharField(choices=QUALITY, max_length=100)
     cover = models.ImageField(upload_to='cover/')
     description = models.TextField()
+    likes = models.ManyToManyField(get_user_model(),  related_name='likes', blank=True)
+    favorite = models.ManyToManyField(get_user_model(),  related_name='favorite', blank=True)
 
     datetime_created = models.DateTimeField(auto_now_add=True)
     datetime_modify = models.DateTimeField(auto_now=True)
