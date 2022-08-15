@@ -1,0 +1,330 @@
+{% extends 'pages/_base.html' %}
+
+
+
+
+
+
+{% block content %}
+
+        <section id="movies">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-8">
+                      #start loop
+                        <!-- movie item -->
+                        <div class="card movie-card">
+                            <div class="movie-card--content">
+                                <div class="row">
+
+                                    <div class="col-xs-12 col-md-3">
+                                        <a href="show-movie.html" class="movie-card--content-cover">
+                                            <img src="assets/images/examples/mov_pils.jpg" alt="cover">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-12 col-md-9">
+
+                                        <a href="show-movie.html">
+                                            <h2 class="movie-card--title">انیمیشن ماجراهای پیل Pil’s Adventures 2021 با دوبله فارسی</h2>
+                                        </a>
+
+                                        <div class="flex items-center mt-2">
+                                            <div class="movie-card--info">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"></path>
+                                                  </svg>
+                                                <ul class="word-list">
+                                                    <li><a href="#">انیمیشن</a></li>
+                                                    <li><a href="#">فانتزی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="movie-card--info mr-6">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+                                                  </svg>
+                                                <span>۸۷٪ رضایت</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="separator"></div>
+
+                                        <div class="mt-8">
+                                            <div class="movie-card--info">
+                                                <span>بازیگران:</span>
+                                                <ul class="word-list mr-2">
+                                                    <li><a href="#">Paul Borne</a></li>
+                                                    <li><a href="#">Kaycie Chase</a></li>
+                                                    <li><a href="#">Julien Crampon</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="movie-card--info mt-4">
+                                                <span>کارگردان:</span>
+                                                <ul class="word-list mr-2">
+                                                    <li><a href="#">Julien Crampon</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="movie-card--info mt-4">
+                                                <svg fill=currentcolor class="lg" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                                    <g id="IMDb"><path d="M6,14.51H8.9V25.67H6Zm0,0H8.9V25.67H6Zm8.38,5.14C14.13,17.94,14,17,14,16.81c-.12-.91-.23-1.7-.35-2.38H9.86V25.59H12.4V18.22l1.07,7.37h1.81l1-7.53v7.53h2.54V14.43H15.05Zm0,0C14.13,17.94,14,17,14,16.81c-.12-.91-.23-1.7-.35-2.38H9.86V25.59H12.4V18.22l1.07,7.37h1.81l1-7.53v7.53h2.54V14.43H15.05Zm9.24-2.9a6.09,6.09,0,0,1,.05,1v4.33a3.92,3.92,0,0,1-.14,1.37c-.1.16-.36.25-.77.25V16.34a1.35,1.35,0,0,1,.64.1A.44.44,0,0,1,23.62,16.75Zm1.31,8.73a2.06,2.06,0,0,0,.87-.4,1.43,1.43,0,0,0,.49-.79,8.42,8.42,0,0,0,.16-2V18.36a14.8,14.8,0,0,0-.11-2.12,2,2,0,0,0-1.61-1.61,11.79,11.79,0,0,0-2.71-.2H19.86V25.59h3.51A10.66,10.66,0,0,0,24.93,25.48Zm-1.31-8.73a6.09,6.09,0,0,1,.05,1v4.33a3.92,3.92,0,0,1-.14,1.37c-.1.16-.36.25-.77.25V16.34a1.35,1.35,0,0,1,.64.1A.44.44,0,0,1,23.62,16.75Zm1.31,8.73a2.06,2.06,0,0,0,.87-.4,1.43,1.43,0,0,0,.49-.79,8.42,8.42,0,0,0,.16-2V18.36a14.8,14.8,0,0,0-.11-2.12,2,2,0,0,0-1.61-1.61,11.79,11.79,0,0,0-2.71-.2H19.86V25.59h3.51A10.66,10.66,0,0,0,24.93,25.48Zm6.19-1.67c-.05.14-.28.21-.46.21a.34.34,0,0,1-.35-.2,3.09,3.09,0,0,1-.08-.94V19.93A3.52,3.52,0,0,1,30.3,19a.32.32,0,0,1,.34-.19c.17,0,.41.07.47.21a3,3,0,0,1,.09.93v2.86A5.24,5.24,0,0,1,31.12,23.81Zm-3.69,1.68H30c.11-.42.17-.66.18-.71a2.12,2.12,0,0,0,1.82.86,2,2,0,0,0,1.19-.36,1.56,1.56,0,0,0,.63-.85,6.1,6.1,0,0,0,.14-1.5V19.8a11.45,11.45,0,0,0,0-1.32,1.39,1.39,0,0,0-.26-.63,1.44,1.44,0,0,0-.65-.5,2.52,2.52,0,0,0-1-.18,2.75,2.75,0,0,0-1,.2,2.18,2.18,0,0,0-.77.6V14.33h-2.8Zm3.69-1.68c-.05.14-.28.21-.46.21a.34.34,0,0,1-.35-.2,3.09,3.09,0,0,1-.08-.94V19.93A3.52,3.52,0,0,1,30.3,19a.32.32,0,0,1,.34-.19c.17,0,.41.07.47.21a3,3,0,0,1,.09.93v2.86A5.24,5.24,0,0,1,31.12,23.81Zm-3.69,1.68H30c.11-.42.17-.66.18-.71a2.12,2.12,0,0,0,1.82.86,2,2,0,0,0,1.19-.36,1.56,1.56,0,0,0,.63-.85,6.1,6.1,0,0,0,.14-1.5V19.8a11.45,11.45,0,0,0,0-1.32,1.39,1.39,0,0,0-.26-.63,1.44,1.44,0,0,0-.65-.5,2.52,2.52,0,0,0-1-.18,2.75,2.75,0,0,0-1,.2,2.18,2.18,0,0,0-.77.6V14.33h-2.8Z"/></g>
+                                                </svg>
+                                                <span>امتیاز IMDb:</span>
+                                                <span class="muted mr-1">6.7</span>
+                                            </div>
+                                            <div class="movie-card--info mt-4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="lg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                                                  </svg>
+                                                <span>زبان:</span>
+                                                <span class="muted mr-1">فارسی، فرانسوی</span>
+                                            </div>
+                                            <div class="movie-card--info mt-4">
+                                                <svg class="lg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                                  </svg>
+                                                <span>سال انتشار:</span>
+                                                <span class="muted mr-1">۲۰۲۱</span>
+                                            </div>
+                                            <div class="movie-card--info mt-4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="lg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                                                  </svg>
+                                                <span>کشور:</span>
+                                                <span class="muted mr-1">فرانسه</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="message message-dark mt-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="message-icon ml-4" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                                              </svg> آپدیت: دوبله فارسی اضافه شد
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="movie-card--description mt-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                      </svg>
+                                    <label>خلاصه داستان:</label> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                                    مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته،
+                                </div>
+
+                                <div class="text-left mt-3">
+                                    <a href="show-movie.html">
+                                        <button class="btn btn-outline btn-lg">مشاهده / دانلود</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./ movie item -->
+                    #end loop
+                        <!-- movie item -->
+                        <div class="card movie-card">
+                            <div class="movie-card--content">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-3">
+                                        <a href="show-movie.html" class="movie-card--content-cover">
+                                            <img src="assets/images/examples/mov_pils.jpg" alt="cover">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-12 col-md-9">
+
+                                        <a href="show-movie.html">
+                                            <h2 class="movie-card--title">انیمیشن ماجراهای پیل Pil’s Adventures 2021 با دوبله فارسی</h2>
+                                        </a>
+
+                                        <div class="flex items-center mt-2">
+                                            <div class="movie-card--info">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"></path>
+                                                  </svg>
+                                                <ul class="word-list">
+                                                    <li><a href="#">انیمیشن</a></li>
+                                                    <li><a href="#">فانتزی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="movie-card--info mr-6">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+                                                  </svg>
+                                                <span>۸۷٪ رضایت</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="separator"></div>
+
+                                        <div class="mt-8">
+                                            <div class="movie-card--info">
+                                                <span>بازیگران:</span>
+                                                <ul class="word-list mr-2">
+                                                    <li><a href="#">Paul Borne</a></li>
+                                                    <li><a href="#">Kaycie Chase</a></li>
+                                                    <li><a href="#">Julien Crampon</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="movie-card--info mt-4">
+                                                <span>کارگردان:</span>
+                                                <ul class="word-list mr-2">
+                                                    <li><a href="#">Julien Crampon</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="movie-card--info mt-4">
+                                                <svg fill=currentcolor class="lg" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                                    <g id="IMDb"><path d="M6,14.51H8.9V25.67H6Zm0,0H8.9V25.67H6Zm8.38,5.14C14.13,17.94,14,17,14,16.81c-.12-.91-.23-1.7-.35-2.38H9.86V25.59H12.4V18.22l1.07,7.37h1.81l1-7.53v7.53h2.54V14.43H15.05Zm0,0C14.13,17.94,14,17,14,16.81c-.12-.91-.23-1.7-.35-2.38H9.86V25.59H12.4V18.22l1.07,7.37h1.81l1-7.53v7.53h2.54V14.43H15.05Zm9.24-2.9a6.09,6.09,0,0,1,.05,1v4.33a3.92,3.92,0,0,1-.14,1.37c-.1.16-.36.25-.77.25V16.34a1.35,1.35,0,0,1,.64.1A.44.44,0,0,1,23.62,16.75Zm1.31,8.73a2.06,2.06,0,0,0,.87-.4,1.43,1.43,0,0,0,.49-.79,8.42,8.42,0,0,0,.16-2V18.36a14.8,14.8,0,0,0-.11-2.12,2,2,0,0,0-1.61-1.61,11.79,11.79,0,0,0-2.71-.2H19.86V25.59h3.51A10.66,10.66,0,0,0,24.93,25.48Zm-1.31-8.73a6.09,6.09,0,0,1,.05,1v4.33a3.92,3.92,0,0,1-.14,1.37c-.1.16-.36.25-.77.25V16.34a1.35,1.35,0,0,1,.64.1A.44.44,0,0,1,23.62,16.75Zm1.31,8.73a2.06,2.06,0,0,0,.87-.4,1.43,1.43,0,0,0,.49-.79,8.42,8.42,0,0,0,.16-2V18.36a14.8,14.8,0,0,0-.11-2.12,2,2,0,0,0-1.61-1.61,11.79,11.79,0,0,0-2.71-.2H19.86V25.59h3.51A10.66,10.66,0,0,0,24.93,25.48Zm6.19-1.67c-.05.14-.28.21-.46.21a.34.34,0,0,1-.35-.2,3.09,3.09,0,0,1-.08-.94V19.93A3.52,3.52,0,0,1,30.3,19a.32.32,0,0,1,.34-.19c.17,0,.41.07.47.21a3,3,0,0,1,.09.93v2.86A5.24,5.24,0,0,1,31.12,23.81Zm-3.69,1.68H30c.11-.42.17-.66.18-.71a2.12,2.12,0,0,0,1.82.86,2,2,0,0,0,1.19-.36,1.56,1.56,0,0,0,.63-.85,6.1,6.1,0,0,0,.14-1.5V19.8a11.45,11.45,0,0,0,0-1.32,1.39,1.39,0,0,0-.26-.63,1.44,1.44,0,0,0-.65-.5,2.52,2.52,0,0,0-1-.18,2.75,2.75,0,0,0-1,.2,2.18,2.18,0,0,0-.77.6V14.33h-2.8Zm3.69-1.68c-.05.14-.28.21-.46.21a.34.34,0,0,1-.35-.2,3.09,3.09,0,0,1-.08-.94V19.93A3.52,3.52,0,0,1,30.3,19a.32.32,0,0,1,.34-.19c.17,0,.41.07.47.21a3,3,0,0,1,.09.93v2.86A5.24,5.24,0,0,1,31.12,23.81Zm-3.69,1.68H30c.11-.42.17-.66.18-.71a2.12,2.12,0,0,0,1.82.86,2,2,0,0,0,1.19-.36,1.56,1.56,0,0,0,.63-.85,6.1,6.1,0,0,0,.14-1.5V19.8a11.45,11.45,0,0,0,0-1.32,1.39,1.39,0,0,0-.26-.63,1.44,1.44,0,0,0-.65-.5,2.52,2.52,0,0,0-1-.18,2.75,2.75,0,0,0-1,.2,2.18,2.18,0,0,0-.77.6V14.33h-2.8Z"/></g>
+                                                </svg>
+                                                <span>امتیاز IMDb:</span>
+                                                <span class="muted mr-1">6.7</span>
+                                            </div>
+                                            <div class="movie-card--info mt-4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="lg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                                                  </svg>
+                                                <span>زبان:</span>
+                                                <span class="muted mr-1">فارسی، فرانسوی</span>
+                                            </div>
+                                            <div class="movie-card--info mt-4">
+                                                <svg class="lg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                                  </svg>
+                                                <span>سال انتشار:</span>
+                                                <span class="muted mr-1">۲۰۲۱</span>
+                                            </div>
+                                            <div class="movie-card--info mt-4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="lg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                                                  </svg>
+                                                <span>کشور:</span>
+                                                <span class="muted mr-1">فرانسه</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="message message-dark mt-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="message-icon ml-4" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                                              </svg> آپدیت: دوبله فارسی اضافه شد
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="movie-card--description mt-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                      </svg>
+                                    <label>خلاصه داستان:</label> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                                    مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته،
+                                </div>
+
+                                <div class="text-left mt-3">
+                                    <a href="show-movie.html">
+                                        <button class="btn btn-outline btn-lg">مشاهده / دانلود</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./ movie item -->
+
+                        <!-- movie item -->
+                        <div class="card movie-card">
+                            <div class="movie-card--content">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-3">
+                                        <a href="show-movie.html" class="movie-card--content-cover">
+                                            <img src="assets/images/examples/mov_pils.jpg" alt="cover">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-12 col-md-9">
+
+                                        <a href="show-movie.html">
+                                            <h2 class="movie-card--title">انیمیشن ماجراهای پیل Pil’s Adventures 2021 با دوبله فارسی</h2>
+                                        </a>
+
+                                        <div class="flex items-center mt-2">
+                                            <div class="movie-card--info">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"></path>
+                                                  </svg>
+                                                <ul class="word-list">
+                                                    <li><a href="#">انیمیشن</a></li>
+                                                    <li><a href="#">فانتزی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="movie-card--info mr-6">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+                                                  </svg>
+                                                <span>۸۷٪ رضایت</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="separator"></div>
+
+                                        <div class="mt-8">
+                                            <div class="movie-card--info">
+                                                <span>بازیگران:</span>
+                                                <ul class="word-list mr-2">
+                                                    <li><a href="#">Paul Borne</a></li>
+                                                    <li><a href="#">Kaycie Chase</a></li>
+                                                    <li><a href="#">Julien Crampon</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="movie-card--info mt-4">
+                                                <span>کارگردان:</span>
+                                                <ul class="word-list mr-2">
+                                                    <li><a href="#">Julien Crampon</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="movie-card--info mt-4">
+                                                <svg fill=currentcolor class="lg" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                                    <g id="IMDb"><path d="M6,14.51H8.9V25.67H6Zm0,0H8.9V25.67H6Zm8.38,5.14C14.13,17.94,14,17,14,16.81c-.12-.91-.23-1.7-.35-2.38H9.86V25.59H12.4V18.22l1.07,7.37h1.81l1-7.53v7.53h2.54V14.43H15.05Zm0,0C14.13,17.94,14,17,14,16.81c-.12-.91-.23-1.7-.35-2.38H9.86V25.59H12.4V18.22l1.07,7.37h1.81l1-7.53v7.53h2.54V14.43H15.05Zm9.24-2.9a6.09,6.09,0,0,1,.05,1v4.33a3.92,3.92,0,0,1-.14,1.37c-.1.16-.36.25-.77.25V16.34a1.35,1.35,0,0,1,.64.1A.44.44,0,0,1,23.62,16.75Zm1.31,8.73a2.06,2.06,0,0,0,.87-.4,1.43,1.43,0,0,0,.49-.79,8.42,8.42,0,0,0,.16-2V18.36a14.8,14.8,0,0,0-.11-2.12,2,2,0,0,0-1.61-1.61,11.79,11.79,0,0,0-2.71-.2H19.86V25.59h3.51A10.66,10.66,0,0,0,24.93,25.48Zm-1.31-8.73a6.09,6.09,0,0,1,.05,1v4.33a3.92,3.92,0,0,1-.14,1.37c-.1.16-.36.25-.77.25V16.34a1.35,1.35,0,0,1,.64.1A.44.44,0,0,1,23.62,16.75Zm1.31,8.73a2.06,2.06,0,0,0,.87-.4,1.43,1.43,0,0,0,.49-.79,8.42,8.42,0,0,0,.16-2V18.36a14.8,14.8,0,0,0-.11-2.12,2,2,0,0,0-1.61-1.61,11.79,11.79,0,0,0-2.71-.2H19.86V25.59h3.51A10.66,10.66,0,0,0,24.93,25.48Zm6.19-1.67c-.05.14-.28.21-.46.21a.34.34,0,0,1-.35-.2,3.09,3.09,0,0,1-.08-.94V19.93A3.52,3.52,0,0,1,30.3,19a.32.32,0,0,1,.34-.19c.17,0,.41.07.47.21a3,3,0,0,1,.09.93v2.86A5.24,5.24,0,0,1,31.12,23.81Zm-3.69,1.68H30c.11-.42.17-.66.18-.71a2.12,2.12,0,0,0,1.82.86,2,2,0,0,0,1.19-.36,1.56,1.56,0,0,0,.63-.85,6.1,6.1,0,0,0,.14-1.5V19.8a11.45,11.45,0,0,0,0-1.32,1.39,1.39,0,0,0-.26-.63,1.44,1.44,0,0,0-.65-.5,2.52,2.52,0,0,0-1-.18,2.75,2.75,0,0,0-1,.2,2.18,2.18,0,0,0-.77.6V14.33h-2.8Zm3.69-1.68c-.05.14-.28.21-.46.21a.34.34,0,0,1-.35-.2,3.09,3.09,0,0,1-.08-.94V19.93A3.52,3.52,0,0,1,30.3,19a.32.32,0,0,1,.34-.19c.17,0,.41.07.47.21a3,3,0,0,1,.09.93v2.86A5.24,5.24,0,0,1,31.12,23.81Zm-3.69,1.68H30c.11-.42.17-.66.18-.71a2.12,2.12,0,0,0,1.82.86,2,2,0,0,0,1.19-.36,1.56,1.56,0,0,0,.63-.85,6.1,6.1,0,0,0,.14-1.5V19.8a11.45,11.45,0,0,0,0-1.32,1.39,1.39,0,0,0-.26-.63,1.44,1.44,0,0,0-.65-.5,2.52,2.52,0,0,0-1-.18,2.75,2.75,0,0,0-1,.2,2.18,2.18,0,0,0-.77.6V14.33h-2.8Z"/></g>
+                                                </svg>
+                                                <span>امتیاز IMDb:</span>
+                                                <span class="muted mr-1">6.7</span>
+                                            </div>
+                                            <div class="movie-card--info mt-4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="lg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                                                  </svg>
+                                                <span>زبان:</span>
+                                                <span class="muted mr-1">فارسی، فرانسوی</span>
+                                            </div>
+                                            <div class="movie-card--info mt-4">
+                                                <svg class="lg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                                  </svg>
+                                                <span>سال انتشار:</span>
+                                                <span class="muted mr-1">۲۰۲۱</span>
+                                            </div>
+                                            <div class="movie-card--info mt-4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="lg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                                                  </svg>
+                                                <span>کشور:</span>
+                                                <span class="muted mr-1">فرانسه</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="message message-dark mt-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="message-icon ml-4" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                                              </svg> آپدیت: دوبله فارسی اضافه شد
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="movie-card--description mt-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                      </svg>
+                                    <label>خلاصه داستان:</label> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                                    مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته،
+                                </div>
+
+                                <div class="text-left mt-3">
+                                    <a href="show-movie.html">
+                                        <button class="btn btn-outline btn-lg">مشاهده / دانلود</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./ movie item -->
+{% endblock %}
